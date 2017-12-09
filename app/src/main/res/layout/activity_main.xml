@@ -6,10 +6,17 @@
     android:layout_height="match_parent"
     tools:context="com.example.muhammadafifaf.iakdayone.main.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view_id"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 
 </LinearLayout>
